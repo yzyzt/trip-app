@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.activity_main);
 
-        mMapView = (TextureMapView) findViewById(R.id.mTexturemap);
+        mMapView = (TextureMapView) findViewById(R.id.mTexturemap);//地图初始化
         mBaiduMap = mMapView.getMap();
     }
 
