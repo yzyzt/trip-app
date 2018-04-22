@@ -20,6 +20,7 @@ android {
     sourceSets {
         main {
             jniLibs.srcDir 'libs'
+            res.srcDirs = ['src/main/res', 'src/main/res/menu']
         }
     }
 }
@@ -33,4 +34,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation files('libs/BaiduLBS_Android.jar')
     implementation files('libs/IndoorscapeAlbumPlugin.jar')
+    implementation files('libs/android-support-v4.jar')
 }
